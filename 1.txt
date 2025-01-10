@@ -1,0 +1,37 @@
+class K:
+    def e(self: object, i: str) -> str:
+        return "/".join([hex(ord(c) + 990828)[2:] for c in i])
+    def i(self: object, k: bool = 0, *e: str, **d: float) -> exec:
+        self._d = 'abcdefghijklmnopqrstuvwxyz0123456789
+        self._e, self._b = self.e, self._d
+        if k:
+            self._s = ''.join(e)
+        return None
+    def enc(self, c: str) -> str:
+        return self.e(c)
+    def ce(self, ec: str) -> str:
+        ec_code = f"""
+#تشفير سهل 😅
+class K:
+    def d(self: object, e: str) -> exec:
+        return "".join([chr(int(b, 16) - 990828) for b in e.split('/')])
+    def i(self: object, b: bool = False, k: bool = 0, *e: str, **d: float) -> exec:
+        self._d = 'abcdefghijklmnopqrstuvwxyz0123456789
+        self._b = self.d
+        if k:
+            self._s = ''.join(e)
+        return None
+    def r(self: object, ec: str) -> None:
+        code = self.d(ec)
+        exec(code)
+k = K()
+k.i()
+ec = '''{ec}'''
+k.r(ec)
+"""
+        return ec_code
+k = K()
+ed = k.enc('ها الكود الي تريده تشفره')
+ec_code = k.ce(ed)
+with open("enc.py", "w") as f:
+    f.write(ec_code)
